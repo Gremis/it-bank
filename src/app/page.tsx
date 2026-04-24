@@ -226,7 +226,7 @@ export default function Home() {
       );
     }
     setAmount("");
-    setMessage("Operacao realizada com sucesso.");
+    setMessage("Operação realizada com sucesso.");
     setScreen("statement");
   }
 
@@ -729,7 +729,7 @@ function TransferScreen({
 function Header({ userName, onLogout }: { userName: string; onLogout: () => void }) {
   return (
     <header className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-      <h1 className="text-xl font-bold sm:text-2xl">Bem vindo, {userName}</h1>
+      <h1 className="text-xl font-bold sm:text-2xl">Bem-vindo, {userName}</h1>
       <button
         className="h-10 w-full rounded-md border border-neutral-200 px-4 text-sm font-bold text-neutral-700 transition hover:bg-neutral-50 sm:w-auto"
         onClick={onLogout}

@@ -1,36 +1,67 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Impacta Bank
 
-## Getting Started
+Aplicacao front-end simples desenvolvida durante o curso da Impacta. O projeto simula um fluxo basico de internet banking, sem back-end, banco de dados ou autenticacao real. Todos os dados ficam em estado local no navegador enquanto a pagina esta aberta.
 
-First, run the development server:
+## Sobre o projeto
+
+O Impacta Bank foi criado como um prototipo para praticar construcao de interfaces, estado em React e fluxos de navegacao em uma aplicacao Next.js.
+
+O app permite:
+
+- criar uma conta de usuario com nome, e-mail e senha;
+- fazer login em uma sessao simulada;
+- selecionar uma conta corrente ou poupanca para iniciar;
+- visualizar saldo e extrato;
+- filtrar transacoes por periodo;
+- depositar dinheiro;
+- sacar dinheiro;
+- transferir para uma conta favorecida;
+- sair da sessao e voltar para o login.
+
+## Caracteristicas
+
+- Front-end only: nao possui API, persistencia externa ou integracao bancaria real.
+- Mobile first e responsivo: a interface foi pensada primeiro para telas pequenas, mas tambem se adapta ao desktop.
+- Estado local: saldos, transacoes, usuario logado e conta selecionada sao controlados com `useState`.
+- Fluxo completo de sessao: cadastro, login, selecao de conta, area autenticada e logout.
+- Prototipo didatico: o foco e demonstrar comportamento e navegacao, nao regras financeiras reais.
+
+## Tecnologias
+
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+
+## Como rodar
+
+Instale as dependencias:
+
+```bash
+npm install
+```
+
+Inicie o servidor de desenvolvimento:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Acesse:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```text
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Scripts
 
-## Learn More
+```bash
+npm run dev
+npm run build
+npm run lint
+npm run start
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Observacoes
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Este projeto e apenas um exercicio academico. Valores, contas, favorecidos e transacoes sao dados ficticios usados para representar o fluxo visual de um banco digital.
